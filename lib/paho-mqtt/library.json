@@ -1,0 +1,19 @@
+{
+  "name": "paho-mqtt",
+  "version": "1.0.0",
+  "build": {
+    "srcFilter": [
+      "+<*.c>",
+      "+<packet/*.c>"
+    ],
+    "flags": [
+      "-I$PROJECT_LIB_DIR/paho-mqtt",
+      "-I$PROJECT_LIB_DIR/paho-mqtt/packet",
+      "-I/home/station/pio-workspace/pio-standalone/packages/framework-beken-bdk/beken378/func/paho-mqtt/packet/src",
+      "-I/home/station/pio-workspace/pio-standalone/packages/framework-beken-bdk/beken378/func/paho-mqtt/client/src",
+      "-I/home/station/pio-workspace/pio-standalone/packages/framework-beken-bdk/beken378/func/paho-mqtt/client",
+      "-DMQTT_TASK=1",
+      "-DMQTTCLIENT_PLATFORM_HEADER=\"MQTTFreeRTOS.h\""
+    ]
+  }
+}
